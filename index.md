@@ -1,20 +1,27 @@
 ---
 layout: default
-title: Welcome to My Website
+title: Personal Portfolio
 ---
 
-# Hello World!
+# Hey, I'm Joel
 
-This is my first Jekyll-powered GitHub Pages site using the **Minima** theme.
+I am a full stack web developer and software developer.
+
+<button onclick="viewWork()">View Work</button>
 
 ## About Me
 
-I am Joel, a software developer learning how to use GitHub Pages and Jekyll.
+I am a IT Grad with skills catered to web and software development.
+Through studying I have learnt HTML, CSS, JavaScript, Python, Java,
+GitHub, MySQL.
 
-### Features
+### Projects
 
-- GitHub Pages
-- Jekyll with Markdown
-- Minima theme styling
+- Project 1
+- Project 2
+- Project 3
 
-Feel free to explore the site and check back for updates!
+### Contact
+
+Feel free to contact me using my email address
+joel.cooper@hotmail.com
