@@ -15,13 +15,13 @@ I am a IT Grad with skills catered to web and software development.
 Through studying I have learnt HTML, CSS, JavaScript, Python, Java,
 GitHub, MySQL.
 
-### Projects
+## Projects
 
 - Project 1
 - Project 2
 - Project 3
 
-### Contact
+## Contact
 
 Feel free to contact me using my email address
 joel.cooper@hotmail.com
