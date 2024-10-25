@@ -12,8 +12,8 @@ I am a full stack web developer and software developer.
 ## About Me
 
 I am a IT Grad with skills catered to web and software development.
-Through studying I have learnt HTML, CSS, JavaScript, Python, Java,
-GitHub, MySQL.
+Through studying I have learnt HTML, CSS, JavaScript, Python, Java, GitHub, MySQL.
+111
 
 ## Projects
 {: #projects }
