@@ -27,5 +27,5 @@ GitHub, MySQL.
 Feel free to contact me using my email address
 joel.cooper@hotmail.com
 
-<script src="js/main.js"></script>
-<link rel="stylesheet" href="css/style.css">
+<script src="assets/js/main.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
