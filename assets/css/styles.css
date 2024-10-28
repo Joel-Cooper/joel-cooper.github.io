@@ -1,11 +1,46 @@
+body{
+    background: rgb(33,42,49);
+    background: linear-gradient(rgba(33,42,49,1) 40%, rgba(46,57,68,1) 80%, rgba(116,141,146,1) 100%);
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 20px;
+    line-height:40px
+    
+}
+
+#main {
+    padding: 0 250px; 
+    margin: 0 auto; 
+}
+
+header {
+    padding: 0 250px; 
+    margin: 0 auto; 
+}
+
+div {
+    margin: 200px 0px;
+}
+
 h1{
-    font-size: 40px;
+    font-size: 60px;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 button {
     padding: 10px;
+    background-color: aliceblue;
+}
+
+a {
+    color: aliceblue;
+}
+
+#contact {
+    text-align: center;
 }

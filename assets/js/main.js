@@ -1,4 +1,4 @@
 function viewWork(){
-    const projectsSection = document.querySelector('h2#projects');
+    const projectsSection = document.querySelector('#projects');
     projectsSection.scrollIntoView({ behavior: 'smooth'});
 }
