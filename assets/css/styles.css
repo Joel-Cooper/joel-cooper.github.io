@@ -7,5 +7,9 @@ h2 {
 }
 
 button {
-    padding: 100px;
+    padding: 10px;
+}
+
+p {
+    color: brown;
 }
