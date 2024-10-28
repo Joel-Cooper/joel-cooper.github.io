@@ -14,8 +14,27 @@ body{
 }
 
 header {
+    display: flex;
+    justify-content: space-between; /* Places items at the edges */
+    align-items: center; /* Aligns items vertically in the center */
     padding: 0 250px; 
     margin: 0 auto; 
+}
+
+header h3 {
+    margin: 0;
+}
+
+#navbar {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Align items horizontally */
+    gap: 20px; /* Add space between items */
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline; /* Optional; flexbox will handle horizontal alignment */
 }
 
 div {
