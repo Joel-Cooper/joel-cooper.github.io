@@ -2,7 +2,7 @@ body {
     background: #292c34;
     color: #acb2bf;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 40px;
 }
 
@@ -13,9 +13,11 @@ body {
 
 header {
     padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #1b1d22; 
 }
 
 header h3 {
@@ -59,7 +61,7 @@ header h3 {
     margin: 200px 0;
 }
 
-.section p, ul, div{
+.section p, ul, div, a{
     margin-left: 75px;
 }
 
@@ -72,6 +74,7 @@ h1 {
 .green { color: #9bc379; }
 .blue { color: #4093ee; }
 .yellow { color: #f9c928; }
+.pink { color: #c278dd;}
 
 h2 {
     font-size: 40px;
@@ -80,8 +83,8 @@ h2 {
 
 #introduction {
     text-align: center; 
-    margin-top: 300px;
-    margin-bottom: 300px;
+    margin-top: 280px;
+    margin-bottom: 280px;
 }
 
 #introduction button {
@@ -95,6 +98,24 @@ h2 {
     margin-top: 120px; 
 }
 
+.arrow {
+    font-size: 40px; 
+    color: #acb2bf; 
+    position: relative;
+    animation: bounce 1s infinite alternate;
+    margin: 30px 0px; 
+}
+
+/* Keyframes for the bouncing effect */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px); 
+    }
+}
+
 .skills {
     margin-bottom: 100px;
 }
@@ -103,9 +124,19 @@ h2 {
     display: inline-block;
     margin: 10px 20px 0 0;
     padding: 0 10px;
+    color:#c278dd ;
+}
+
+.skills h3 {
+    font-size: 30px;
+}
+
+.red-border{
+    border-style: solid;
+    border-color: #bc4134;
 }
 
 a {
-    color: aliceblue;
+    color: #9bc379;
 }
 
