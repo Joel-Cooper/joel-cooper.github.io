@@ -58,7 +58,7 @@
     
         function next() {
             // Populate Image
-            img.src = `images/project_1/${images[slideNumber].src}`;
+            img.src = `/images/project_1/${images[slideNumber].src}`;
             caption.textContent = images[slideNumber].caption;
             img.title = images[slideNumber].caption;
             img.alt = images[slideNumber].caption;
@@ -68,7 +68,7 @@
             if (slideNumber >= images.length) slideNumber = 0;
     
             // Prefetch
-            prefetch.src = `images/project_1/${images[slideNumber].src}`;
+            prefetch.src = `/images/project_1/${images[slideNumber].src}`;
         }
     
         // Auto-start slideshow after a short delay
