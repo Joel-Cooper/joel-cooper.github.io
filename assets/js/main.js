@@ -7,9 +7,8 @@ window.onerror = function(message, url, line) {
 startSlideShow();
 
 function startSlideShow(){
-    let images = [{src: 'proj1-1.jpg', caption: 'Account Creation Screenshot'}, {src: 'proj1-2.jpg', caption: 'desc2'},
-        {src: 'proj1-3.jpg', caption: 'desc3'}, {src: 'proj1-4.jpg', caption: 'desc4'}, 
-        {src: 'proj1-5.jpg', caption: 'desc5'}
+    let images = [{src: 'proj1-1.jpg', caption: 'Account Creation Screenshot'}, {src: 'proj1-2.jpg', caption: 'Form Submission'},
+        {src: 'proj1-3.jpg', caption: 'Uploaded Forms'}, {src: 'proj1-4.jpg', caption: 'Uploaded Form'}
     ];
 
     doSlides(images, 'div#slides', 3000);
