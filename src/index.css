@@ -1,0 +1,69 @@
+:root {
+  line-height: 1.5;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #292c34;
+  color: #acb2bf;
+  font-family: monospace;
+  font-size: 25px;
+  line-height: 40px;
+  overflow-x: hidden;
+}
+
+#main {
+  padding: 0 250px; 
+  margin: 0 auto;
+}
+
+.section {
+  padding: 0 250px;
+  padding-top: 50px;
+  margin: 170px 0;
+}
+
+/* Apply margin-left only to p, ul, div, and a within .section that need it */
+.section p, .section ul, .section div, .section a {
+  margin-left: 75px; /* Or adjust as necessary */
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.red { color: #bc4134; }
+.orange { color: #cb7c44; }
+.green { color: #9bc379; }
+.blue { color: #4093ee; }
+.yellow { color: #f9c928; }
+.pink { color: #c278dd;}
+
+
+.skills {
+  margin-bottom: 100px;
+}
+
+.skills div {
+  display: inline-block;
+  margin: 10px 20px 0 0;
+  padding: 0 10px;
+  color:#c278dd ;
+}
+
+.skills h3 {
+  font-size: 30px;
+}
+
+a {
+  color: #9bc379;
+}

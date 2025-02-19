@@ -1,0 +1,34 @@
+.introduction {
+    text-align: center; 
+    margin-top: 280px;
+    margin-bottom: 230px;
+}
+  
+.introduction button {
+    background: none; 
+    color:#4093ee; 
+    border: none; 
+    padding: 10px; 
+    cursor: pointer;
+    font-size: 30px;
+    font-family: inherit;
+    margin-top: 120px; 
+}
+
+.arrow {
+    font-size: 40px; 
+    color: #acb2bf; 
+    position: relative;
+    animation: bounce 1s infinite alternate;
+    margin: 30px 0px; 
+}
+
+/* Keyframes for the bouncing effect */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px); 
+    }
+  }

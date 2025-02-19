@@ -1,0 +1,14 @@
+.skills {
+    margin-bottom: 100px;
+}
+
+.skills div {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    padding: 0 10px;
+    color:#c278dd ;
+}
+
+.skills h3 {
+    font-size: 30px;
+}
