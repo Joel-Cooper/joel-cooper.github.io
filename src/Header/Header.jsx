@@ -22,16 +22,16 @@ function Header({ viewWork }){
 
             {/* Social Media Icons */}
             <div className={styles.icons}>
-                <a href='https://www.linkedin.com' target='blank' rel='noopener noreferrer'>
+                <a href='https://www.linkedin.com/in/joel-cooper-224974269/' target='blank' rel='noopener noreferrer'>
                     <img src={linkedInIcon} alt='LinkedIn'></img>
                 </a>
-                <a href='https://github.com' target='blank' rel='noopener noreferrer'>
+                <a href='https://github.com/Joel-Cooper' target='blank' rel='noopener noreferrer'>
                     <img src={gitHubIcon} alt='LinkedIn'></img>
                 </a>
-                <a href='https://www.hackerrank.com' target='blank' rel='noopener noreferrer'>
+                <a href='https://www.hackerrank.com/profile/joel_cooper' target='blank' rel='noopener noreferrer'>
                     <img src={hackerRankIcon} alt='LinkedIn'></img>
                 </a>
-                <a href='https://leetcode.com' target='blank' rel='noopener noreferrer'>
+                <a href='https://leetcode.com/u/joel-cooper/' target='blank' rel='noopener noreferrer'>
                     <img src={leetCodeIcon} alt='LinkedIn'></img>
                 </a>
             </div>
