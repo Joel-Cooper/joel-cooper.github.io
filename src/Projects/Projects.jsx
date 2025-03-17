@@ -1,6 +1,8 @@
-import { useState } from "react";
+import PropTypes from "prop-types";
+import { useState, useEffect } from "react";
 
 import styles from "./Projects.module.css";
+import styles2 from "./Projects2.module.css";
 
 import project1ScreenShot1 from "../assets/project1/proj1-1.jpg";
 import project1ScreenShot2 from "../assets/project1/proj1-2.jpg";
@@ -14,7 +16,16 @@ const images = [
     { src: project1ScreenShot4, caption: "Completed Form" }
 ]
 
-function Projects(){
+function Projects( theme ){
+    const [componentStyles, setComponentStyles] = useState(styles);
+
+    useEffect(() => {
+        if (theme === 'minimal'){
+            setComponentStyles(styles2);
+        } else {
+            setComponentStyles(styles);
+        }
+    }, [theme]);
 
     const [lightboxIndex, setLightboxIndex] = useState(null);
 
@@ -59,7 +70,7 @@ function Projects(){
                                 width="200"
                                 height="150"
                                 onClick={() => openLightbox(index)}
-                                className={styles.thumbnail}
+                                className={componentStyles.thumbnail}
                                 alt={image.caption}
                             />                            
                         ))}
@@ -71,18 +82,23 @@ function Projects(){
 
             {/* Lightbox Modal */}
             {lightboxIndex !== null && (
-                <div className={styles.lightboxBackground} onClick={closeLightbox}>
-                <div className={styles.lightbox} onClick={(e) => e.stopPropagation()}>
-                    <button className={styles.close} onClick={closeLightbox}>×</button>
-                    <button className={styles.prev} onClick={showPrev}>&lt;</button>
+                <div className={componentStyles.lightboxBackground} onClick={closeLightbox}>
+                <div className={componentStyles.lightbox} onClick={(e) => e.stopPropagation()}>
+                    <button className={componentStyles.close} onClick={closeLightbox}>×</button>
+                    <button className={componentStyles.prev} onClick={showPrev}>&lt;</button>
                     <img src={images[lightboxIndex].src} alt={images[lightboxIndex].caption} />
-                    <p className={styles.caption}>{images[lightboxIndex].caption}</p>
-                    <button className={styles.next} onClick={showNext}>&gt;</button>
+                    <p className={componentStyles.caption}>{images[lightboxIndex].caption}</p>
+                    <button className={componentStyles.next} onClick={showNext}>&gt;</button>
                 </div>
                 </div>
             )}
         </div>
     );
+}
+
+// Define Prop Types
+Projects.propTypes = {
+    theme: PropTypes.string.isRequired,
 }
 
 export default Projects

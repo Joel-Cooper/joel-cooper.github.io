@@ -1,0 +1,17 @@
+.introduction {
+    margin-top: 170px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+  
+.introduction button {
+    display: none;
+}
+
+.arrow {
+    display: none;
+}
+
+.hide {
+    color: white;
+}

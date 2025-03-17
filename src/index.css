@@ -48,20 +48,15 @@ h2 {
 .yellow { color: #f9c928; }
 .pink { color: #c278dd;}
 
-
-.skills {
-  margin-bottom: 100px;
-}
-
-.skills div {
-  display: inline-block;
-  margin: 10px 20px 0 0;
-  padding: 0 10px;
-  color:#c278dd ;
-}
-
-.skills h3 {
-  font-size: 30px;
+#themeButton {
+  position: absolute;
+  top: 38px;
+  left: 50px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: #27292e;
+  color: #acb2bf;
 }
 
 a {
