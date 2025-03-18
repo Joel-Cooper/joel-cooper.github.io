@@ -1,15 +1,32 @@
 .skills {
-    margin-bottom: 100px;
-    color: #000000;
+    margin-bottom: 80px;
 }
 
 .skills div {
     display: inline-block;
     margin: 10px 20px 0 0;
-    padding: 0 10px;
+    padding: 0 15px;
     color:#000000 ;
 }
 
 .skills h3 {
     font-size: 30px;
+}
+
+.skills img {
+    height: 100px;
+    width: auto;
+    transition: transform 0.2s ease-in-out;
+    margin: 0px 20px;
+}
+
+.skills img:hover {
+    transform: scale(1.2);
+}
+
+.skills p {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    text-align: center;
 }

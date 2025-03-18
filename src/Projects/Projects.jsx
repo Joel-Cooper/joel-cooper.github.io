@@ -16,7 +16,7 @@ const images = [
     { src: project1ScreenShot4, caption: "Completed Form" }
 ]
 
-function Projects( theme ){
+function Projects({ theme }){
     const [componentStyles, setComponentStyles] = useState(styles);
 
     useEffect(() => {
