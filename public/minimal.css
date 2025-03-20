@@ -22,7 +22,7 @@ body {
 }
 
 .section {
-  padding: 50px 100px;
+  padding: 40px 100px;
   margin: 0;
 }
 
@@ -36,7 +36,9 @@ h1 {
 
 h2 {
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  text-transform: capitalize;
 }
 
 .red { color: #000000; }
@@ -57,4 +59,8 @@ a {
   left: 50px;
   background-color: rgb(240, 240, 240);
   color: rgb(95, 95, 95);
+}
+
+#themeButton:hover {
+  background-color: rgb(228, 222, 222);
 }

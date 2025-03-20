@@ -39,6 +39,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 50px;
+  text-transform: lowercase;
 }
 
 .red { color: #bc4134; }
@@ -57,6 +58,10 @@ h2 {
   padding: 5px;
   background-color: #27292e;
   color: #acb2bf;
+}
+
+#themeButton:hover {
+  background-color: #393b41;
 }
 
 a {

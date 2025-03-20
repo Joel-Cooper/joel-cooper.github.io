@@ -30,78 +30,34 @@ function Skills({ theme }){
 
 
     return(
-        <div className="section" id="skills">
+        <div className="section">
             <h2>
                 <span className="blue">skills</span><span className="yellow">()</span><span className="yellow">{" {"}</span>
             </h2>
 
             <div className={componentStyles.skills}>
                 <h3>Web Development</h3>
-                <div>
-                    <img src={htmlIcon} alt='HTML Icon'></img>
-                    <p className='caption'>HTML</p>
-                </div>
-
-                <div>
-                    <img src={cssIcon} alt='CSS Icon'></img>
-                    <p className='caption'>CSS</p>
-                </div>
-
-                <div>
-                    <img src={javascriptIcon} alt='JavaScript Icon'></img>
-                    <p className='caption'>JavaScript</p>
-                </div>
-
-                <div>
-                    <img src={tailwindIcon} alt='Tailwind CSS Icon'></img>
-                    <p className='caption'>Tailwind CSS</p>
-                </div>
-
-                <div>
-                    <img src={reactIcon} alt='React Icon'></img>
-                    <p className='caption'>React</p>
-                </div>
-
-                <div>
-                    <img src={nodejsIcon} alt='Node.js Icon' className='rectangle'></img>
-                    <p className='caption'>node.js</p>
-                </div>
+                <div><img src={htmlIcon} alt='HTML Icon'/><p className='caption'>HTML</p></div>
+                <div><img src={cssIcon} alt='CSS Icon'/><p className='caption'>CSS</p></div>
+                <div><img src={javascriptIcon} alt='JavaScript Icon'/><p className='caption'>JavaScript</p></div>
+                <div><img src={tailwindIcon} alt='Tailwind CSS Icon'/><p className='caption'>Tailwind CSS</p></div>
+                <div><img src={reactIcon} alt='React Icon'/><p className='caption'>React</p></div>
+                <div><img src={nodejsIcon} alt='Node.js Icon' className='rectangle'/><p className='caption'>Node.js</p></div>
             </div>
 
             <div className={componentStyles.skills}>
                 <h3>Software Development</h3>
-                <div>
-                    <img src={javaIcon} alt='Java Icon'></img>
-                    <p className='caption'>Java</p>
-                </div>
-
-                <div>
-                    <img src={pythonIcon} alt='Python Icon'></img>
-                    <p className='caption'>Python</p>
-                </div>
+                <div><img src={javaIcon} alt='Java Icon'/><p className='caption'>Java</p></div>
+                <div><img src={pythonIcon} alt='Python Icon'/><p className='caption'>Python</p></div>
             </div>
+            
 
-            <div className={componentStyles.skills}>
+            <div className={componentStyles.otherSkills} id='misc'>
                 <h3>Miscellaneous</h3>
-                <div>
-                    <img src={mysqlIcon} alt='MySQL Icon' className='rectangle'></img>
-                    <p className='caption'>MySQL</p>
-                </div>
-
-                <div>
-                    <img src={githubIcon} alt='GitHub Icon'></img>
-                    <p className='caption'>GitHub</p>
-                </div>
-
-                <div>
-                    <img src={awsIcon} alt='Amazon Web Services Icon' className='rectangle'></img>
-                    <p className='caption'>Amazon Web Services</p>
-                </div>
-
-                <div>
-                    <img src={wixIcon} alt='Wix Website Builder Icon' className='rectangle'></img>
-                    <p className='caption'>Wix Website Builder</p>
-                </div>
+                <div><img src={mysqlIcon} alt='MySQL Icon' className='rectangle'/><p className='caption'>MySQL</p></div>
+                <div><img src={githubIcon} alt='GitHub Icon'/><p className='caption'>GitHub</p></div>
+                <div><img src={awsIcon} alt='Amazon Web Services Icon' className='rectangle'/><p className='caption'>Amazon Web Services</p></div>
+                <div><img src={wixIcon} alt='Wix Website Builder Icon' className='rectangle'/><p className='caption'>Wix Website Builder</p></div>
             </div>
 
             <h2 className="yellow">{"}"}</h2>

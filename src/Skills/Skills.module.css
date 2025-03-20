@@ -31,3 +31,38 @@
     color: #acb2bf;
     text-align: center;
 }
+
+.otherSkills {
+    margin-bottom: 80px;
+}
+
+.otherSkills div {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    padding: 0 15px;
+    color:#000000 ;
+}
+
+.otherSkills h3 {
+    font-size: 30px;
+}
+
+.otherSkills img {
+    height: 100px;
+    width: auto;
+    transition: transform 0.2s ease-in-out;
+    margin: 0px 20px;
+}
+
+.otherSkills img:hover {
+    transform: scale(1.2);
+}
+
+.otherSkills p {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    color: #acb2bf;
+    text-align: center;
+}
+

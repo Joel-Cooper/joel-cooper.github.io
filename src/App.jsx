@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import './index.css';
 import Header from "./Header/Header.jsx"
 import Introduction from "./Introduction/Introduction.jsx";
-import About from "./About.jsx";
+import About from "./About/About.jsx";
 import Skills from "./Skills/Skills.jsx";
 import Projects from "./Projects/Projects.jsx";
 import Contact from "./Contact.jsx";
