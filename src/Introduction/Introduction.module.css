@@ -3,7 +3,7 @@
 .introduction {
     text-align: center; 
     margin-top: 280px;
-    margin-bottom: 230px;
+    margin-bottom: 200px;
 }
   
 .introduction button {
@@ -41,22 +41,13 @@
 .hidden {
   opacity:0;
 }
-.console-container {
- 
-  font-family:Khula;
-  font-size:4em;
-  text-align:center;
-  height:200px;
-  width:600px;
-  display:block;
-  position:absolute;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
+
+.console_container {
+    color:#acb2bf;
+    text-align:center;
+    margin-top: 30px;
 }
+
 .console-underscore {
     display: inline-block;
     width: 10px;

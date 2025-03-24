@@ -1,0 +1,83 @@
+.project a{
+    color: #9bc379;
+}
+
+.lightboxBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.lightbox {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80vh;
+}
+
+.lightbox p {
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev, .next {
+    color: rgb(82, 82, 82);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 34px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Remove margin-left from lightbox to center it properly */
+.lightboxBackground, .lightbox, .caption {
+    margin-left: 0 !important;
+}
+
+
+
+

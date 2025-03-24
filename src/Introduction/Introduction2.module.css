@@ -1,6 +1,6 @@
 .introduction {
     margin-top: 180px;
-    margin-bottom: 140px;
+    margin-bottom: 141px;
     text-align: center;
 }
   
@@ -14,4 +14,27 @@
 
 .hide {
     color: white;
+}
+
+
+
+.hidden {
+    opacity:0;
+}
+
+.console_container {
+    color: black;
+    text-align:center;
+    margin-top: 30px;
+}
+
+.console-underscore {
+    display: inline-block;
+    width: 10px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }

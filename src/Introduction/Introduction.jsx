@@ -15,7 +15,6 @@ function Introduction({ theme, viewWork }) {
 
   useEffect(() => {
     const text = "I am a full-stack web developer and software developer.";
-    const color = "gray";
   
     let letterCount = 0;
     let typingForward = true;
@@ -23,14 +22,12 @@ function Introduction({ theme, viewWork }) {
   
     const target = textRef.current;
     if (!target) return;
-  
-    target.style.color = color;
-  
+    
     const typingInterval = setInterval(() => {
       if (isPaused) return; // Stop typing if paused
   
       if (typingForward) {
-        // Typing Forward (adds one letter at a time)
+        // Typing Forward 
         target.innerHTML = text.substring(0, letterCount) + "<span class='console-underscore'>_</span>";
         letterCount++;
   
@@ -41,8 +38,8 @@ function Introduction({ theme, viewWork }) {
         }
   
       } else {
-        // Deleting Backward (removes one letter at a time)
-        letterCount--; // <-- Fix: Now decrements one by one
+        // Deleting Backward 
+        letterCount--; 
         target.innerHTML = text.substring(0, letterCount) + "<span class='console-underscore'>_</span>";
   
         if (letterCount === 0) {
@@ -77,7 +74,7 @@ function Introduction({ theme, viewWork }) {
         <span className="red">Hey</span>, <span className="orange">I&apos;m</span> <span className="green">Joel</span>
       </h1>
 
-      <div className='console-container'>
+      <div className={componentStyles.console_container}>
         <span ref={textRef}></span>
       </div>
             

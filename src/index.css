@@ -51,19 +51,15 @@ h2 {
 
 #themeButton {
   position: absolute;
-  top: 38px;
+  top: 36px;
   left: 50px;
   border: none;
   outline: none;
-  padding: 5px;
+  padding: 8px;
   background-color: #27292e;
   color: #acb2bf;
 }
 
 #themeButton:hover {
   background-color: #393b41;
-}
-
-a {
-  color: #9bc379;
 }

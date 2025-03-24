@@ -1,3 +1,7 @@
+.project a{
+  color: #9bc379;
+}
+
 .lightboxBackground {
     position: fixed;
     top: 0;
@@ -73,3 +77,4 @@
 .lightboxBackground, .lightbox, .caption {
   margin-left: 0 !important;
 }
+

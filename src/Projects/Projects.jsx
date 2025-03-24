@@ -20,11 +20,7 @@ function Projects({ theme }){
     const [componentStyles, setComponentStyles] = useState(styles);
 
     useEffect(() => {
-        if (theme === 'minimal'){
-            setComponentStyles(styles2);
-        } else {
-            setComponentStyles(styles);
-        }
+        setComponentStyles(theme === 'minimal' ? styles2 : styles);
     }, [theme]);
 
     const [lightboxIndex, setLightboxIndex] = useState(null);
@@ -51,7 +47,7 @@ function Projects({ theme }){
                 <span className="blue">projects</span><span className="yellow">()</span><span className="yellow">{" {"}</span>
             </h2>
 
-            <div className="project">
+            <div className={componentStyles.project}>
                 <h3>VTCA Website</h3>
                 <div>
                     <a href="https://www.vtca.com.au/">Victorian Turf Cricket Association (VTCA)</a>

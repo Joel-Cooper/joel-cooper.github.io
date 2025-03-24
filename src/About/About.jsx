@@ -8,11 +8,7 @@ function About({ theme }){
     const [componentStyles, setComponentStyles] = useState(styles);
 
     useEffect(() => {
-        if (theme === 'minimal'){
-            setComponentStyles(styles2);
-        } else {
-            setComponentStyles(styles);
-        }
+        setComponentStyles(theme === 'minimal' ? styles2 : styles);
     }, [theme]);
 
     return(
