@@ -24,6 +24,7 @@ body {
 .section {
   padding: 40px 100px;
   margin: 0;
+  margin-bottom: 100px;
 }
 
 .section p, .section ul, .section div, .section a {
@@ -46,7 +47,7 @@ h2 {
 .green { color: #16588E; }
 .blue { color: #000000; }
 .yellow { display: none; }
-.pink { color: #000000;}
+.pink { color: #000000; }
 
 #themeButton {
   position: absolute;
@@ -58,4 +59,17 @@ h2 {
 
 #themeButton:hover {
   background-color: rgb(228, 222, 222);
+}
+
+#projects{
+  background-color: #f2f3f5;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+#catalogue {
+  margin-top: 40px;
+  padding: 10px 10px 0px 10px;
+  width: fit-content;
+  
 }

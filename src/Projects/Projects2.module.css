@@ -1,5 +1,9 @@
-.project a{
-    color: #9bc379;
+.project a {
+    color: #16588E;
+}
+
+.project a:visited {
+    color: #16588E;
 }
 
 .lightboxBackground {

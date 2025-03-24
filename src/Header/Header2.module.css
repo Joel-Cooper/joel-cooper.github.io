@@ -16,6 +16,11 @@
     color: #16588E;
 }
 
+.redHover:hover { color: #4f8bbd; }
+.orangeHover:hover{ color: #4f8bbd; }
+.greenHover:hover{ color: #4f8bbd; }
+.blueHover:hover{ color: #4f8bbd; }
+
 .navbar {
     display: flex;
     gap: 50px;

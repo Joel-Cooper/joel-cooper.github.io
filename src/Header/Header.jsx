@@ -18,7 +18,18 @@ function Header({ theme, viewWork }){
 
     return (
         <header className={componentStyles.header}>
-            <h3>Joel Cooper</h3>
+            <h3><span className={componentStyles.redHover}>J</span>
+                <span className={componentStyles.orangeHover}>o</span>
+                <span className={componentStyles.greenHover}>e</span>
+                <span className={componentStyles.blueHover}>l</span>
+                <span> </span>  
+                <span className={componentStyles.redHover}>C</span>
+                <span className={componentStyles.orangeHover}>o</span>
+                <span className={componentStyles.greenHover}>o</span>
+                <span className={componentStyles.blueHover}>p</span>
+                <span className={componentStyles.redHover}>e</span>
+                <span className={componentStyles.orangeHover}>r</span>
+            </h3>
 
             <nav className={componentStyles.navbar}>
                 <button onClick={() => viewWork("about")}>About</button>

@@ -27,9 +27,8 @@ body {
   margin: 170px 0;
 }
 
-/* Apply margin-left only to p, ul, div, and a within .section that need it */
-.section p, .section ul, .section div, .section a {
-  margin-left: 75px; /* Or adjust as necessary */
+.section p, .section div {
+  margin-left: 75px; 
 }
 
 h1 {
@@ -49,6 +48,7 @@ h2 {
 .yellow { color: #f9c928; }
 .pink { color: #c278dd;}
 
+
 #themeButton {
   position: absolute;
   top: 36px;
@@ -62,4 +62,23 @@ h2 {
 
 #themeButton:hover {
   background-color: #393b41;
+}
+
+#skills {
+  margin-top: 120px;
+}
+
+#catalogue {
+  margin-top: 10px;
+  padding: 10px 10px 0px 10px;
+  width: fit-content;
+}
+
+#contact {
+  margin-top: 120px;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
 }

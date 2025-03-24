@@ -18,9 +18,9 @@ function Contact({ theme }){
             </h2>
 
             <div className={componentStyles.contact}>
-                <p>Feel free to contact me using my email address:</p>
+        
+                <p>Feel free to contact me using my email address: <a href="mailto:joel.cooper@hotmail.com">joel.cooper@hotmail.com</a></p>
 
-                <a href="mailto:joel.cooper@hotmail.com">joel.cooper@hotmail.com</a>
             </div>
             
             <h2 className="yellow">{"}"}</h2>
