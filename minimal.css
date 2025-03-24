@@ -48,14 +48,9 @@ h2 {
 .yellow { display: none; }
 .pink { color: #000000;}
 
-
-a {
-  color: #0000EE;;
-}
-
 #themeButton {
   position: absolute;
-  top: 47px;
+  top: 45px;
   left: 50px;
   background-color: rgb(240, 240, 240);
   color: rgb(95, 95, 95);
