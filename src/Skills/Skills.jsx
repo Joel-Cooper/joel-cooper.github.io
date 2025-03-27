@@ -26,7 +26,7 @@ function Skills({ theme }){
 
 
     return(
-        <div className="section">
+        <div className={componentStyles.section}>
             <h2>
                 <span className="blue">skills</span><span className="yellow">()</span><span className="yellow">{" {"}</span>
             </h2>

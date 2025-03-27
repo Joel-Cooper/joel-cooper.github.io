@@ -1,5 +1,15 @@
+.section {
+    padding: 0 250px;
+    padding-top: 1px;
+    margin: 240px 0;
+}
+
+.section p, .section div {
+    margin-left: 75px; 
+}
+
 .skills {
-    margin-bottom: 80px;
+    margin-bottom: 55px;
 }
 
 .skills div {
@@ -33,7 +43,7 @@
 }
 
 .otherSkills {
-    margin-bottom: 80px;
+    margin-bottom: 55px;
 }
 
 .otherSkills div {

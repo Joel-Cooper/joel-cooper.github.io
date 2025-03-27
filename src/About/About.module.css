@@ -1,13 +1,14 @@
 .section {
     padding: 0 250px;
-    padding-top: 50px;
-    margin: 170px 0;
+    padding-top: 190px;
+    margin: 180px 0;
     background-color: #292c34;
+    line-height: 2.2em;
   }
 
-  /* Apply margin-left only to p, ul, div, and a within .section that need it */
 .section p, .section ul, .section div, .section a {
-    margin-left: 75px; /* Or adjust as necessary */
+    margin-left: 75px; 
+    margin-top: 40px;
   }
 
   .blue{ color: #4093ee; }
