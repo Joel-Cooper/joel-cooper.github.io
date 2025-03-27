@@ -11,7 +11,6 @@ import project1ScreenShot4 from "../assets/project1/proj1-4.jpg";
 
 import project2ScreenShot1 from "../assets/project2/proj2-1.jpg";
 import project2ScreenShot2 from "../assets/project2/proj2-2.jpg";
-import project2ScreenShot3 from "../assets/project2/proj2-3.jpg";
 import project2ScreenShot4 from "../assets/project2/proj2-4.jpg";
 import project2ScreenShot5 from "../assets/project2/proj2-5.jpg";
 import project2ScreenShot6 from "../assets/project2/proj2-6.jpg";
@@ -26,7 +25,6 @@ const proj1Images = [
 const proj2Images = [
     { src: project2ScreenShot1, caption: "Initial State" },
     { src: project2ScreenShot2, caption: "Upload Song Menu" },
-    { src: project2ScreenShot3, caption: "Uploading Song" },
     { src: project2ScreenShot4, caption: "Song Uploaded" },
     { src: project2ScreenShot5, caption: "Songs Menu (with multiple songs)" },
     { src: project2ScreenShot6, caption: "Pause Button" }
@@ -98,6 +96,10 @@ function Projects({ theme }) {
                         ))}
                     </div>
                 </div>
+            </div>
+            
+            <div className={componentStyles.projectSpacer}>
+
             </div>
 
             {/* Project 2 */}

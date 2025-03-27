@@ -27,7 +27,7 @@ body {
   margin-bottom: 100px;
 }
 
-.section p, .section ul, .section div, .section a {
+.section p, .section div {
   margin-left: 0px; 
 }
 
@@ -67,9 +67,14 @@ h2 {
   padding-bottom: 10px;
 }
 
+#projects .section {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
 #catalogue {
   margin-top: 40px;
   padding: 10px 10px 0px 10px;
   width: fit-content;
-  
+  margin: auto;
 }

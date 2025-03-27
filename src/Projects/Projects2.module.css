@@ -6,6 +6,19 @@
     color: #16588E;
 }
 
+.project {
+    padding-bottom: 50px;
+}
+
+.project div p {
+    margin-left: 0;
+}
+
+.projectSpacer {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
 .lightboxBackground {
     position: fixed;
     top: 0;

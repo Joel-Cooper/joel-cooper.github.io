@@ -68,10 +68,15 @@ h2 {
   margin-top: 120px;
 }
 
+#projects .section {
+  margin-bottom: 50px;
+}
+
 #catalogue {
   margin-top: 10px;
   padding: 10px 10px 0px 10px;
   width: fit-content;
+  margin-left: 0;
 }
 
 #contact {
