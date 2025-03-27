@@ -9,63 +9,114 @@ import project1ScreenShot2 from "../assets/project1/proj1-2.jpg";
 import project1ScreenShot3 from "../assets/project1/proj1-3.jpg";
 import project1ScreenShot4 from "../assets/project1/proj1-4.jpg";
 
-const images = [
+import project2ScreenShot1 from "../assets/project2/proj2-1.jpg";
+import project2ScreenShot2 from "../assets/project2/proj2-2.jpg";
+import project2ScreenShot3 from "../assets/project2/proj2-3.jpg";
+import project2ScreenShot4 from "../assets/project2/proj2-4.jpg";
+import project2ScreenShot5 from "../assets/project2/proj2-5.jpg";
+import project2ScreenShot6 from "../assets/project2/proj2-6.jpg";
+
+const proj1Images = [
     { src: project1ScreenShot1, caption: "Account Creation" },
     { src: project1ScreenShot2, caption: "Form Submission" },
     { src: project1ScreenShot3, caption: "Filtered Database Search for Completed Forms" },
     { src: project1ScreenShot4, caption: "Completed Form" }
-]
+];
 
-function Projects({ theme }){
+const proj2Images = [
+    { src: project2ScreenShot1, caption: "Initial State" },
+    { src: project2ScreenShot2, caption: "Upload Song Menu" },
+    { src: project2ScreenShot3, caption: "Uploading Song" },
+    { src: project2ScreenShot4, caption: "Song Uploaded" },
+    { src: project2ScreenShot5, caption: "Songs Menu (with multiple songs)" },
+    { src: project2ScreenShot6, caption: "Pause Button" }
+];
+
+function Projects({ theme }) {
     const [componentStyles, setComponentStyles] = useState(styles);
 
     useEffect(() => {
         setComponentStyles(theme === 'minimal' ? styles2 : styles);
     }, [theme]);
 
-    const [lightboxIndex, setLightboxIndex] = useState(null);
+    const [lightbox, setLightbox] = useState({ index: null, project: null });
 
-    const openLightbox = (index) => {
-        setLightboxIndex(index);
+    const openLightbox = (index, project) => {
+        setLightbox({ index, project });
     };
 
     const closeLightbox = () => {
-        setLightboxIndex(null);
+        setLightbox({ index: null, project: null });
     };
 
     const showNext = () => {
-        setLightboxIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setLightbox(prev => ({
+            ...prev,
+            index: (prev.index + 1) % (prev.project === "proj1" ? proj1Images.length : proj2Images.length)
+        }));
     };
 
     const showPrev = () => {
-        setLightboxIndex((prevIndex) => prevIndex === 0 ? images.length - 1 : prevIndex - 1);
+        setLightbox(prev => ({
+            ...prev,
+            index: prev.index === 0 ? (prev.project === "proj1" ? proj1Images.length - 1 : proj2Images.length - 1) : prev.index - 1
+        }));
     };
 
-    return(
+    const getCurrentImages = () => {
+        return lightbox.project === "proj1" ? proj1Images : proj2Images;
+    };
+
+    return (
         <div id="projects" className="section">
             <h2>
                 <span className="blue">projects</span><span className="yellow">()</span><span className="yellow">{" {"}</span>
             </h2>
 
+            {/* Project 1 */}
             <div className={componentStyles.project}>
                 <h3>VTCA Website</h3>
                 <div>
                     <a href="https://www.vtca.com.au/">Victorian Turf Cricket Association (VTCA)</a>
-                    <p> - Work experience during my time as a student.</p>
+                    <p>- Work experience during my time as a student.</p>
                     <p>- Worked as a part of a team with four other students.</p>   
-                    <p>- Used Wix Website Buidler which included learning Velo.</p>    
+                    <p>- Used Wix Website Builder which included learning Velo.</p>    
                     <p>- Took part in regular team/stakeholder meetings.</p>    
-                    
-                    <div id="catalogue">
 
-                        {images.map((image, index) => (
+                    <div id="catalogue">
+                        {proj1Images.map((image, index) => (
                             <img
                                 key={index}
                                 src={image.src}
                                 title={image.caption}
                                 width="200"
                                 height="150"
-                                onClick={() => openLightbox(index)}
+                                onClick={() => openLightbox(index, "proj1")}
+                                className={componentStyles.thumbnail}
+                                alt={image.caption}
+                            />                            
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* Project 2 */}
+            <div className={componentStyles.project}>
+                <h3>Audio File Player (Java)</h3>
+                <div>
+                    <p>- Personal Project.</p>
+                    <p>- Used JavaFX to create application.</p>    
+                    <p>- Allows user to upload and listen to mp3 files.</p>    
+
+                    <div id="catalogue">
+                        {proj2Images.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image.src}
+                                title={image.caption}
+                                width="200"
+                                height="150"
+                                onClick={() => openLightbox(index, "proj2")}
                                 className={componentStyles.thumbnail}
                                 alt={image.caption}
                             />                            
@@ -77,15 +128,15 @@ function Projects({ theme }){
             <h2 className="yellow">{"}"}</h2>
 
             {/* Lightbox Modal */}
-            {lightboxIndex !== null && (
+            {lightbox.index !== null && (
                 <div className={componentStyles.lightboxBackground} onClick={closeLightbox}>
-                <div className={componentStyles.lightbox} onClick={(e) => e.stopPropagation()}>
-                    <button className={componentStyles.close} onClick={closeLightbox}>×</button>
-                    <button className={componentStyles.prev} onClick={showPrev}>&lt;</button>
-                    <img src={images[lightboxIndex].src} alt={images[lightboxIndex].caption} />
-                    <p className={componentStyles.caption}>{images[lightboxIndex].caption}</p>
-                    <button className={componentStyles.next} onClick={showNext}>&gt;</button>
-                </div>
+                    <div className={componentStyles.lightbox} onClick={(e) => e.stopPropagation()}>
+                        <button className={componentStyles.close} onClick={closeLightbox}>×</button>
+                        <button className={componentStyles.prev} onClick={showPrev}>&lt;</button>
+                        <img src={getCurrentImages()[lightbox.index].src} alt={getCurrentImages()[lightbox.index].caption} />
+                        <p className={componentStyles.caption}>{getCurrentImages()[lightbox.index].caption}</p>
+                        <button className={componentStyles.next} onClick={showNext}>&gt;</button>
+                    </div>
                 </div>
             )}
         </div>
@@ -95,6 +146,6 @@ function Projects({ theme }){
 // Define Prop Types
 Projects.propTypes = {
     theme: PropTypes.string.isRequired,
-}
+};
 
-export default Projects
+export default Projects;
