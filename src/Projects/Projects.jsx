@@ -9,11 +9,11 @@ import project1ScreenShot2 from "../assets/project1/proj1-2.jpg";
 import project1ScreenShot3 from "../assets/project1/proj1-3.jpg";
 import project1ScreenShot4 from "../assets/project1/proj1-4.jpg";
 
-import project2ScreenShot1 from "../assets/project2/proj2-1.jpg";
-import project2ScreenShot2 from "../assets/project2/proj2-2.jpg";
-import project2ScreenShot4 from "../assets/project2/proj2-4.jpg";
-import project2ScreenShot5 from "../assets/project2/proj2-5.jpg";
-import project2ScreenShot6 from "../assets/project2/proj2-6.jpg";
+import project2ScreenShot1 from "../assets/project2/sc1.jpg";
+import project2ScreenShot2 from "../assets/project2/sc2.jpg";
+import project2ScreenShot3 from "../assets/project2/sc3.jpg";
+import project2ScreenShot4 from "../assets/project2/sc4.jpg";
+import project2ScreenShot5 from "../assets/project2/sc5.jpg";
 
 const proj1Images = [
     { src: project1ScreenShot1, caption: "Account Creation" },
@@ -24,10 +24,10 @@ const proj1Images = [
 
 const proj2Images = [
     { src: project2ScreenShot1, caption: "Initial State" },
-    { src: project2ScreenShot2, caption: "Upload Song Menu" },
-    { src: project2ScreenShot4, caption: "Song Uploaded" },
-    { src: project2ScreenShot5, caption: "Songs Menu (with multiple songs)" },
-    { src: project2ScreenShot6, caption: "Pause Button" }
+    { src: project2ScreenShot2, caption: "Song Uploaded" },
+    { src: project2ScreenShot3, caption: "Playing Song" },
+    { src: project2ScreenShot4, caption: "Changing Volume with Slider" },
+    { src: project2ScreenShot5, caption: "Skipping forward in Song using Duration Bar" }
 ];
 
 function Projects({ theme }) {
