@@ -11,6 +11,7 @@ import tailwindIcon from '../assets/skills/tailwind-icon.png';
 import reactIcon from '../assets/skills/react-icon.png';
 import nodejsIcon from '../assets/skills/nodejs-icon.png';
 import javaIcon from '../assets/skills/java-icon.png';
+import springBootIcon from '../assets/skills/springboot-icon.png';
 import pythonIcon from '../assets/skills/python-icon.png';
 import mysqlIcon from '../assets/skills/mysql-icon.png';
 import githubIcon from '../assets/skills/github-icon.png';
@@ -44,6 +45,7 @@ function Skills({ theme }){
             <div className={componentStyles.skills}>
                 <h3>Software Development</h3>
                 <div><img src={javaIcon} alt='Java Icon'/><p className='caption'>Java</p></div>
+                <div><img src={springBootIcon} alt='Spring Boot Icon'/><p className='caption'>Spring Boot</p></div>
                 <div><img src={pythonIcon} alt='Python Icon'/><p className='caption'>Python</p></div>
             </div>
             
