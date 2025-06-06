@@ -7,7 +7,7 @@ import styles2 from './Skills2.module.css';
 import htmlIcon from '../assets/skills/html-icon.png';
 import cssIcon from '../assets/skills/css-icon.png';
 import javascriptIcon from '../assets/skills/javascript-icon.png';
-import angularIcon from '../assets/skills/tailwind-icon.png';
+import angularIcon from '../assets/skills/angular-icon.png';
 import reactIcon from '../assets/skills/react-icon.png';
 import nodejsIcon from '../assets/skills/nodejs-icon.png';
 import javaIcon from '../assets/skills/java-icon.png';
